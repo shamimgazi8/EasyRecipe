@@ -1,3 +1,4 @@
+//Importing Data
 import loding from "../../photo/loding.png";
 import time from "../../photo/time.png";
 import people from "../../photo/people.png";

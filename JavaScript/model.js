@@ -1,3 +1,10 @@
+/**
+ * State Contains All of data from API
+ * SelectedID Recives ID from Search Results Recipe!
+ * Search store our All recipes of Search result from API and render these to Search Result
+ * query store the keywords of Searching history
+ * and finally Bookmark recives and remove all the data of Bookmarks, what actually user wants!
+ */
 export const state = {
   selectedID: {},
   Recipe: {},
@@ -7,6 +14,9 @@ export const state = {
   },
   bookmarks: [],
 };
+/**
+ * query comes from user and SearchQuery function make API calls and recives data asyncronusly
+ */
 export const searchQuery = async function (query) {
   try {
     if (!query) return;
@@ -23,6 +33,10 @@ export const searchQuery = async function (query) {
     alert(err.message);
   }
 };
+/**
+ * selectedRecipe function works when User click a specific recipes from search result and this api call get us a specific recipes data !
+ *
+ */
 export const selectedRecipe = async function () {
   try {
     const response = await fetch(
@@ -40,6 +54,7 @@ export const selectedRecipe = async function () {
       ingredients: recipe.ingredients,
       source: recipe.source_url,
     };
+
     if (state.bookmarks.some((b_mark) => b_mark.id == state.selectedID))
       state.Recipe.bookmark = true;
     else state.Recipe.bookmark = false;
