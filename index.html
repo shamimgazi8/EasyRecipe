@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyRecipe</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="photo/chef-removebg-preview (1).png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Preahvihear"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="./JavaScript/controller.js"></script>
+  </head>
+  <body>
+    <form class="search_box">
+      <div class="search_div">
+        <input
+          placeholder="Pizza, Pasta or something else!"
+          class="search search_input"
+          type="text"
+        />
+      </div>
+      <div class="button">
+        <button class="search_btn">Search</button>
+      </div>
+      <div class="icon">
+        <div class="add_recipe">
+          <div class="icn-1"><img src="photo/add.png" alt="" /></div>
+          <p class="add_recipe_p">ADD RECIPE</p>
+        </div>
+        <div class="bookmark">
+          <div class="icn-2"><img src="photo/bookmark-fill.png" alt="" /></div>
+          <p>BOOKMARKS</p>
+          <div class="dropdown">
+            <p>No bookmarks yet. Find a nice recipe and bookmark it ;)</p>
+            <!-- <div class="rec-1 rec">
+              <img src="photo/pngimg.com - pizza_PNG44076.png" alt="" />
+              <p>CheassyPizza</p>
+            </div>
+            <div class="rec-1 rec">
+              <img src="photo/pngimg.com - pizza_PNG44076.png" alt="" />
+              <p>CheassyPizza</p>
+            </div>
+            <div class="rec-1 rec">
+              <img src="photo/pngimg.com - pizza_PNG44076.png" alt="" />
+              <p>CheassyPizza</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="heading">
+      <div class="search_result">
+        <!-- <a href="#5ed6604591c37cdc054bcb34">rec 1</a>
+        <a href="#5ed6604591c37cdc054bca5d">rec 2</a> -->
+        <!-- <div class="rec-1 rec">
+          <img src="photo/pngimg.com - pizza_PNG44076.png" alt="" />
+          <p>CheassyPizza</p>
+        </div>
+        <div class="rec-2 rec">
+          <img src="photo/sasuage.png" alt="" />
+          <p>Sasuage Carniva</p>
+        </div> -->
+      </div>
+      <div class="heading_text">
+        <h1>Lets Start Cooking with popular Recipes</h1>
+        <p>
+          Want to learn cook but confused to start? <br />No need to worry
+          again!
+        </p>
+      </div>
+      <div class="img">
+        <img src="photo/chef-removebg-preview (1).png" alt="" />
+      </div>
+      <div class="recipe_info">
+        <!-- <div class="recipe-1 recipe" id="">
+          <div class="cover_img">
+            <img src="photo/cover pizza.jpg" alt="" />
+          </div>
+          <div class="pizza_name">
+            <div><p>CheassyPizza</p></div>
+          </div>
+          <div class="time_serving">
+            <div class="cooking_time">
+              <div class="serving_tool_time">
+                <img class="ic" src="photo/time.png" alt="" />
+                <p>75 MINUTES</p>
+              </div>
+            </div>
+            <div class="serving">
+              <div class="serving_tool">
+                <img class="ic" src="photo/people.png" alt="" />
+                <p>4 SERVINGS</p>
+                <button class="plus">+</button>
+                <button class="minus">-</button>
+              </div>
+            </div>
+            <div class="book_mark">
+              <img class="ic" src="photo/bookmark.png" alt="" />
+            </div>
+          </div>
+          <div class="ingredients">
+            <div class="rec-head"><p>RECIPE INGREDIENTS</p></div>
+            <div class="rec-1">
+              <ul class="recipe_ingredient_list">
+                <li class="recipe_ingredient">
+                  <p>1 3/4 (.44 ounce) teaspoons salt</p>
+                </li>
+                <li class="recipe_ingredient">
+                  <p>1 3/4 (.44 ounce) teaspoons salt</p>
+                </li>
+                <li class="recipe_ingredient">
+                  <div class="quantity">5 CUP flower</div>
+                  <div class="descriptio"><span class="unit">2</span> egg</div>
+                </li>
+                <li class="recipe_ingredient">
+                  <div class="quantity">5</div>
+                  <div class="descriptio">
+                    <span class="unit">egg</span> description
+                  </div>
+                </li>
+                <li class="recipe_ingredient">
+                  <div class="quantity">5</div>
+                  <div class="descriptio">
+                    <span class="unit">egg</span> description
+                  </div>
+                </li>
+                <li class="recipe_ingredient">
+                  <div class="quantity">5</div>
+                  <div class="descriptio">
+                    <span class="unit">egg</span> description
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer">
+            <h1>HOW TO COOK IT</h1>
+            <p>
+              This recipe was carefully designed and tested by Closet Cooking.
+              Please check out directions at their website.
+            </p>
+            <div class="directions">
+              <button>DIRECTION >></button>
+            </div>
+          </div>
+        </div> -->
+
+        <p>
+          😃Start by searching for a recipe or <br />an ingredient. Have fun!
+        </p>
+      </div>
+    </div>
+    <div id="modalContainer" class="modal-container">
+      <div class="modal">
+        <button id="closeModalBtn">&times;</button>
+
+        <h2>This Feature Not Available Right now !⛔</h2>
+        <p>Please Wait for next Update and Its coming soon!🙂😊</p>
+      </div>
+      <div class="overlay" id="overlay"></div>
+    </div>
+  </body>
+</html>

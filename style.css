@@ -1,0 +1,456 @@
+* {
+  margin: 2vh;
+  padding: 0;
+}
+body {
+  font-family: "Preahvihear";
+  background-color: rgb(215, 250, 224);
+  /* border: 10px solid white; */
+}
+html {
+  margin: 0;
+}
+.search_box {
+  height: 50px;
+  display: flex;
+}
+::placeholder {
+  font-size: 15px;
+  text-align: center;
+}
+.search {
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 25px;
+  border: rgba(28, 168, 249, 0.506) solid 4px;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  transition: 0.6s;
+}
+.search:hover {
+  border-radius: 20px;
+  color: rgb(147, 145, 145);
+  transform: scale(1.05);
+  background-color: rgba(209, 249, 255, 0.498);
+}
+.search_div {
+  width: 60%;
+}
+.button {
+  height: 45px;
+  width: 100px;
+}
+.search_btn {
+  border-radius: 10px;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border: none;
+  margin-left: 20px;
+  background-color: white;
+  font-size: larger;
+  font-family: monospace;
+  font-weight: bolder;
+  transition: 0.6s;
+  border: rgba(28, 168, 249, 0.506) solid 4px;
+}
+.search_btn:hover {
+  border-radius: 20px;
+  transform: scale(1.2);
+  color: rgb(147, 145, 145);
+  background-color: rgba(209, 249, 255, 0.498);
+}
+.heading {
+  height: 40rem;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.heading_text {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.img {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 200px;
+  width: 150px;
+  transform: translateX(-200px);
+  z-index: -1;
+  transition: 0.6s;
+}
+
+.search_result {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 25rem;
+  height: 50rem;
+  background-color: rgb(253, 254, 255);
+  border-radius: 20px;
+  margin-left: 0;
+  transition: 0.6s;
+  overflow: auto;
+}
+.recipe_info {
+  border-radius: 10px;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: rgb(233, 255, 251);
+
+  height: 30rem;
+  width: 55rem;
+  z-index: -10;
+  transition: 0.6s;
+}
+.recipe_info > p {
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  margin: 10rem;
+}
+.add_recipe {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  font-family: monospace;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  width: 170px;
+  margin-top: 10px;
+  transition: 0.6s;
+  border-radius: 20px;
+}
+
+.bookmark {
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  font-family: monospace;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  width: 170px;
+  margin-left: 30px;
+  margin-top: 10px;
+  transition: 0.6s;
+}
+.icn-1 > img {
+  margin-right: 0;
+  height: 20px;
+  width: 20px;
+}
+.icn-2 > img {
+  margin-right: 0;
+  height: 20px;
+  width: 20px;
+}
+.icn-1 {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.icn-2 {
+  height: 20px;
+  width: 30px;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.bookmark > p {
+  margin-top: 25px;
+  margin-left: 0;
+}
+.add_recipe > p {
+  margin-top: 25px;
+  margin-left: 0;
+}
+.icon {
+  display: flex;
+  margin: 0;
+  margin-left: 50px;
+}
+.bookmark:hover {
+  background-color: rgba(108, 226, 242, 0.601);
+}
+.add_recipe:hover {
+  background-color: rgba(108, 226, 242, 0.601);
+}
+.rec {
+  border-radius: 10px;
+  background-color: rgb(214, 232, 247);
+  display: flex;
+  transition: 0.6s;
+  align-items: center;
+  cursor: pointer;
+}
+.rec > p {
+  transition: 0.6s;
+}
+.rec > img {
+  transition: 0.6s;
+
+  border-radius: 100px;
+  height: 4rem;
+  width: 6rem;
+}
+.rec :hover {
+  scale: 1.2;
+}
+.cover_img > img {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.cover_img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+}
+.recipe {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.pizza_name {
+  display: flex;
+  justify-content: center;
+  transform: skewy(-8deg);
+}
+
+.pizza_name div > p {
+  background: linear-gradient(to top, #33ccff 39%, #0099ff 85%);
+  transform: translatey(-70px);
+  font-family: monospace;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.time_serving {
+  transform: translateY(-80px);
+  margin: 0;
+  padding: 0;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ic {
+  height: 2rem;
+  width: 2rem;
+}
+.serving_tool {
+  cursor: pointer;
+  display: flex;
+}
+/* .book_mark {
+    margin-right: 3rem;
+    margin-top: 20px;
+  } */
+
+.serving_tool > button {
+  font-size: 25px;
+  height: 2rem;
+  width: 2rem;
+  background: none;
+  border-radius: 100px;
+  border: 1px solid black;
+}
+.serving_tool_time {
+  margin-left: 3rem;
+  display: flex;
+}
+.ingredients {
+  margin: 0;
+  width: 120%;
+  height: 45rem;
+  transform: translatex(-80px);
+  overflow: auto;
+  overflow-x: hidden;
+}
+.ic_book {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 30px;
+  padding: 10px;
+}
+.rec-head {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 3rem;
+  width: 100%;
+}
+.rec-head > img {
+  cursor: pointer;
+}
+.rec-head > p {
+  display: flex;
+  justify-content: center;
+}
+.publisher {
+  color: green;
+}
+.rec-1 ul li {
+  border: 3px solid whitesmoke;
+  list-style: none;
+  margin-left: 20px;
+  float: left;
+}
+.footer {
+  margin: 0;
+  height: 15rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.861);
+}
+.footer > h1 {
+  text-align: center;
+}
+.footer > p {
+  margin: 20px;
+  text-align: center;
+}
+.directions > a > button {
+  cursor: pointer;
+  border-radius: 30px;
+  height: 3rem;
+  width: 8rem;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  transition: 0.6s;
+}
+.directions {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+.directions > a > button:hover {
+  scale: 1.3;
+  background-color: white;
+  color: rgb(0, 179, 255);
+  border: 3px solid rgb(0, 200, 255);
+}
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+}
+.spinner > img {
+  height: 6rem;
+  width: 6rem;
+  fill: blue;
+  animation: rotate 1.5s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.checkmark {
+  height: 2rem;
+  width: 2rem;
+}
+.rec-1 ul li > p {
+  display: flex;
+  justify-content: center;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgba(255, 255, 255, 0.274), rgb(0, 0, 0));
+  border-radius: 6px;
+}
+
+.dropdown {
+  overflow: auto;
+  transition: all 1s;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: rgb(215, 250, 224);
+  min-width: 320px;
+  z-index: 1;
+  transform: perspective(1000px);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown div :hover {
+  transition: 0.8s;
+  background-color: #ffffff00;
+  color: #000000;
+}
+.bookmark:hover .dropdown {
+  transition: 0.8s;
+  border-radius: 10px;
+  transform: translateY(42px);
+  display: block;
+  background-color: #ffffff;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transform: translate(-2rem, -2rem);
+  width: 120%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.59);
+  z-index: -99;
+  transform: scale(1.8);
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(39, 183, 255, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 10px 15px black;
+  transform: scale(1.8);
+  transition: opcaity 0.2s ease-in-out, transform 0.2s 0s ease-in-out;
+}
+#closeModalBtn {
+  height: 4rem;
+  width: 4rem;
+  font-size: 50px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4cd8d654;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
